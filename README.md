@@ -189,6 +189,16 @@ There are group-level or conditions for 456&457&458, e.g., one of... "and" with 
 
 Their categories are renamed as EXTENSIVE FUSION PART AB12..
 
+
+9. compare two versions of dataset
+
+- appendix_A.txt dataset comparison
+
+        - Just list the number of changes `python -m drgpy.comparing_appendix_A v41 v42 --summary`
+        
+        - Show summary and N examples for each change type `python -m drgpy.comparing_appendix_A v41 v42 --examples 5`
+
+
 ## License
 
 Apache 2.0

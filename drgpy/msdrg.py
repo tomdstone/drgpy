@@ -1,4 +1,3 @@
-
 import drgpy._mdcsrdr as mdcsrdr
 import drgpy._appndxrdr as appndxrdr
 import drgpy._mdcs0007 as mdcs0007
@@ -10,7 +9,7 @@ from collections import Counter
 
 class DRGEngine:
 
-    def __init__(self, version="v40"):
+    def __init__(self, version="v42"):
         dxmap = defaultdict(list)
         prmap = defaultdict(list)
         dxmap, prmap = mdcsrdr.read(

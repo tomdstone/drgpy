@@ -9,6 +9,8 @@ class DRGEngineAllVers:
         self.de38 = DRGEngine(version="v38")
         self.de39 = DRGEngine(version="v39")
         self.de40 = DRGEngine(version="v40")
+        self.de41 = DRGEngine(version="v41")
+        self.de42 = DRGEngine(version="v42")
 
     def get_drg(self, dx_lst, pr_lst, date, gender="F", is_alive=True):
         """
@@ -39,5 +41,9 @@ class DRGEngineAllVers:
             return self.de38.get_drg(dx_lst, pr_lst, gender, is_alive)
         elif date <= "2022-09-30":
             return self.de39.get_drg(dx_lst, pr_lst, gender, is_alive)
-        else:
+        elif date <= "2023-09-30":
             return self.de40.get_drg(dx_lst, pr_lst, gender, is_alive)
+        elif date <= "2024-09-30":
+            return self.de41.get_drg(dx_lst, pr_lst, gender, is_alive)
+        else:
+            return self.de42.get_drg(dx_lst, pr_lst, gender, is_alive)
